@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCLS02_FND_JANKEN_Kemal</title>
+</head>
+<body>
+    <center>
+        <div>
+            <h2>JANKEN</h2>
+            <class>
+                <img id="gunting" src="gunting.png" style="width:100px; height:100px;"/>
+                <img id="batu" src="batu.png" style="width:100px; height:100px;"/>
+                <img id="kertas" src="kertas.png" style="width:100px; height:100px;"/>
+            </class>
+            <br>
+            <class>
+                <button type="button" id="onGunting" onclick="btnGunting()">Gunting</button>
+                <button type="button" id="onBatu" onclick="btnBatu()">Batu</button>
+                <button type="button" id="onKertas" onclick="btnKertas()">Kertas</button>
+            </class>
+            <class>
+                <h3>Player</h3>
+                <br>
+                <img id="showgunting" src="gunting.png" style="width:150px; height:150px; display: none;"/>
+                <img id="showbatu" src="batu.png" style="width:150px; height:150px; display: none"/>
+                <img id="showkertas" src="kertas.png" style="width:150px; height:150px; display: none"/>
+                <br>
+                <img id="versus" src="versus.png" style="width:100px; height: 100px;">
+                <br>
+                <h3>CPU</h3>
+                <br>
+                <img id="pcgunting" src="gunting.png" style="width:150px; height:150px; display: none;"/>
+                <img id="pcbatu" src="batu.png" style="width:150px; height:150px; display: none"/>
+                <img id="pckertas" src="kertas.png" style="width:150px; height:150px; display: none"/>
+            </class>
+            <class>
+                <h3 id="winnerdisplay"></h3>
+                <h3>RESULT :</h3>
+                <h3 id="win">WIN :</h3>
+                <h3 id="lose">LOSE :</h3>
+                <h3 id="draw">DRAW :</h3>
+                <h3 id="point">POINT : 0</h3>
+            </class>
+        </div>
+    </center>
+</body>
+<script src="./index.js"></script>
+</html>
